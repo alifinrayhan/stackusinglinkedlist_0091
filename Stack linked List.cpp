@@ -16,7 +16,7 @@ public:
 // Stack Class
 class Stack {
 private:
-    Node* top // Pointer to the top node of the stack
+    Node* top; // Pointer to the top node of the stack
 
 
 public:
@@ -59,5 +59,9 @@ public:
         } // return the value of the top node
     }
 
-    //      
-}
+    // IsEmpty operation: Check if the stack is empty
+    bool isEmpty() {
+        return top == NULL; // Return true if the top pointer is NULL, indicating an Empty stack
+
+    }      
+};
